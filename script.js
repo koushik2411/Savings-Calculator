@@ -23,10 +23,11 @@ calculateBtn.addEventListener("click", () => {
     result.classList.remove("show");
     setTimeout(() => {
         if(currentSave>= goalAmount) {
-            result.innerHTML = `"🎉 Congratulations! Your savings have reach your goal";`;
+            result.innerHTML = `🎉 Congratulations! Your savings have reach your goal.`;
         } else {
             result.innerHTML = `🪴 Keep nurturing your savings! You'll reach your goal in ${monthsToGoal} months.`;
         }
         result.classList.add("show");
     }, 100);
+
 });
