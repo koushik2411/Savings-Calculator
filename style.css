@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainBox {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://res.cloudinary.com/dcfjexbss/image/upload/v1756029923/heating-costs-4164538_w6inqy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contBox {
+    width: 80vw;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 20px #b5eeec;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.headingBox {
+    height: 110px;
+    width: 100%;
+    padding: 20px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+    background: #bbb;
+    color: #2a3e00;
+}
+
+.calc {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sep {
+    width: 2px;
+    background: #bbb;
+    border-radius: 50%;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.inputSec {
+    color: #fff;
+}
+
+input {
+    width: 35vw;
+    height: 35px;
+    padding: 0 8px 0 8px;
+    background: #bbb;
+    color: #222;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+#calcBtn {
+    height: 35px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    background: linear-gradient(180deg, #c3ed6a, #a4e41a);
+    border-radius: 5px;
+}
+#calcBtn:active {
+    scale: 0.97;
+}
+
+.right {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.resultBox {
+    color: #fff;
+    text-shadow: 0 0 10px #222;
+    text-align: center;
+    font-weight: bold;
+}
+
+#progressBar {
+    margin-bottom: 25px;
+    height: 15px;
+    background: #a4e41a;
+    border-radius: 20px;
+    width: ;
+    transition: width 1s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+@media (max-width: 435px) {
+    .contBox {
+        width: 95vw;
+    }
+
+    .headingBox {
+        font-size: small;
+    }
+}

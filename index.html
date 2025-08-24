@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savings Calculator</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="mainBox">
+
+        <div class="contBox">
+
+            <div class="headingBox">
+                <h2>Savings Calculator</h2>
+                <p>
+                    Calculate how much money you are saving and how long you have to save to reach your goal.
+                </p>
+            </div>
+
+            <div class="calc">
+
+                <div class="left">
+
+                <div class="inputSec">
+                    <label for="goal">Savings Goal Amount (₹)</label>
+                    <div class="inputBox">
+                        <input id="goal" type="number" placeholder="Enter Your Savings Goal">
+                        <span>
+                            <i class="bi bi-bullseye"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="inputSec">
+                    <label for="current">Current Savings (₹)</label>
+                    <div class="inputBox">
+                        <input id="current" type="number" placeholder="Enter Your Current Savings">
+                        <span>
+                            <i class="bi bi-currency-rupee"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="inputSec">
+                    <label for="contribution">Monthly Contribution (₹)</label>
+                    <div class="inputBox">
+                        <input id="contribution" type="number" placeholder="Enter Your Monthly Contribution">
+                        <span>
+                            <i class="bi bi-piggy-bank-fill"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <button id="calcBtn">
+                    <i class="bi bi-arrow-repeat"></i> Calculate
+                </button>
+
+            </div>
+
+            <div class="sep"></div>
+
+            <div class="right">
+
+                <div class="resultBox">
+
+                    <div class="progress-container">
+                        <div id="progressBar"></div>
+                    </div>
+
+                    <div id="resultText"></div>
+
+                </div>
+
+            </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
